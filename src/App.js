@@ -7,11 +7,11 @@ function App() {
     <div className="App" htmlFor="">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <label htmlFor="">Label Sample</label>
-        <p>
-        Hello  World !!!
         
-        </p>
+        <h1>Hello  World !!!</h1>
+        
+        
+       
            {/*<Blog></Blog>*/}
            <Blog/>
            
