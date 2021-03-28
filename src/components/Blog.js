@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../Blog.css";
 import BlogItem from "./BlogItem";
 
+
 //class Blog extends React.Component {}
 class Blog extends Component {
   
@@ -14,11 +15,12 @@ class Blog extends Component {
     );
     let nowNumber = 123;
     let blogInfos = [
-      { textHead: "Blog 1", textDesc: "Blog 1 Description ...." },
+      { textHead: "Blog 1 textHead", textDesc: "Blog 1 textDescription ...." },
       { textHead: "Blog 2", textDesc: "Blog 2 Description ...." },
-      { textHead: "Blog 3", textDesc: "Blog 3 Description ...." },
-      { textHead: "Blog 4", textDesc: "Blog 4 Description ...." },
+      
+      { textHead: "Blog 1 ile Blog2 ve bu yazi ", textDesc: "blogInfos.map den geliyor" },
     ];
+    
     return (
       <div className="blogTitle">
         <h1>BLOG COMPONENT</h1>
@@ -26,12 +28,13 @@ class Blog extends Component {
         <BlogItem title={blogInfos[1].textHead} description={blogInfos[1].textDesc}/>
         <BlogItem title={blogInfos[2].textHead} description={blogInfos[2].textDesc}/>
         <BlogItem title={blogInfos[3].textHead} description={blogInfos[3].textDesc}/> */}
+        
 
-        {blogInfos.map((currentValue, index) => (
+        {blogInfos.map((item, index) => (
           <BlogItem
             key={index}
-            title={currentValue.textHead}
-            description={currentValue.textDesc}
+            title={item.textHead}
+            description={item.textDesc}
           />
         ))}
 
@@ -45,6 +48,8 @@ class Blog extends Component {
         <label>{5 / 2 === 2.5 ? "YES" : "NO"}</label>
         {blogParaf}
         {5 + 6}
+        
+
       </div>
     );
   }
