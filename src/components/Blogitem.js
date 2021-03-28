@@ -1,16 +1,20 @@
-import React, { Component } from "react";
+//CREATE WITH rcc SNIPPET
+import React, { Component } from 'react'
 
-export default class Blogitem extends Component {
-  render() {
-    const { blogMessage, newData } = this.props;
-    return (
-      <div>
-        <h2>BLOG ITEM COMPONENT</h2>
-        {/*<h4>{this.props.blogMessage}</h4>
-				<h5>{this.props.newData}</h5>*/}
-        <h4>{blogMessage}</h4>
-        <h5>{newData}</h5>
-      </div>
-    );
-  }
+export default class BlogItem extends Component {
+    render() {
+        console.log(this.props)
+        const {blogMessage,nowNmbr} =this.props
+        return (
+            <div>
+                <h1>{this.props.title}</h1>
+                <p>{this.props.description}</p>
+                <h3>{this.props.dataXYZ}</h3>
+                {/* <h4>{this.props.blogMessage}</h4>
+                <h4>{this.props.nowNmbr}</h4> */}
+                <h4>{blogMessage}</h4>
+                <h4>{nowNmbr}</h4>
+            </div>
+        )
+    }
 }
