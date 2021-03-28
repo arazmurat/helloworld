@@ -4,6 +4,7 @@ import BlogItem from "./BlogItem";
 
 //class Blog extends React.Component {}
 class Blog extends Component {
+  
   render() {
     let blogText = "TEXT TEXT TEXT";
     const blogParaf = (
