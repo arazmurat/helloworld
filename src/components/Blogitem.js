@@ -3,6 +3,12 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 export default class BlogItem extends Component {
+    constructor(props){
+        // this not used before super ()
+        super();//if we want we use parametre in super for exm super(props)
+        // usable this keyword after super ()
+        console.log("BlogItem Constructor Method ...","Props ", props)
+      }
   /**
    * user ={name:"Tommy",age:12}
    */
@@ -18,7 +24,7 @@ export default class BlogItem extends Component {
   // Default Props
   static defaultProps = { title: "One Title", description: "One Desc" };
   render() {
-    console.log(this.props);
+    //console.log(this.props);
     const { blogMessage, nowNmbr } = this.props;
     return (
       <div>
