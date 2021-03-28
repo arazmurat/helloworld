@@ -22,7 +22,7 @@ export default class BlogItem extends Component {
     //user.PropTypes.shape({name:PropTypes.string,age:PropTypes.number.isRequired}).isRequired //user icin gecerli son isRequired
   };
   // Default Props
-  static defaultProps = { title: "One Title", description: "One Desc" };
+  static defaultProps = { title: "Static default props", description: "One Desc" };
   render() {
     //console.log(this.props);
     const { blogMessage, nowNmbr } = this.props;
