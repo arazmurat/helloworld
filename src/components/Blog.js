@@ -26,7 +26,7 @@ class Blog extends Component {
 
 
         <BlogItem title="Student" dataXYZ="new h3 text" newData={blogParaf} nowNmbr={nowNumber} blogMessage="Testing with PRPS" />
-        <p>{blogText}</p>
+        <p >{blogText}</p>
         <label>{5 / 2 === 2.5 ? "YES" : "NO"}</label>
         {blogParaf}
         {5 + 6}
